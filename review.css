@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f8;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #102a42;
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 6px;
+    background-color: #49a6e9;
+    margin: 20px auto;
+}
+
+    .review-card {
+    background-color: white;
+    max-width: 1150px;
+    min-height: 650px;
+    margin: 100px auto 0;
+    padding: 40px 50px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    color: #102a42;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+#job {
+    color: #49a6e9;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#info {
+    color: #617d98;
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #49a6e9;
+    transition: 0.3s;
+}
+
+#prev, #next {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+#prev:hover, #next:hover {
+    color: #102a42;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    .review-card {
+        margin-top: 50px;
+        padding: 30px 20px;
+    }
+
+    #person-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #name {
+        font-size: 23px;
+    }
+
+    #info {
+        font-size: 17px;
+    }
+}
